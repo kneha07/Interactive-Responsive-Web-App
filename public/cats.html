@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famous Internet Cats</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <header class="site-header">
+        <a href="/" class="logo-link">
+            <img src="images/logo.png"
+                alt="Cats Power the Internet logo featuring a gray and white tuxedo cat with alert eyes sitting upright against a mint green background"
+                class="logo" width="100" height="100">
+        </a>
+        <h1 class="site-title">Famous Internet Cats</h1>
+        <button class="hamburger-menu" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span class="hamburger-icon"></span>
+        </button>
+        <nav class="main-nav" hidden>
+            <ul class="nav-list">
+                <li><a href="/">Home</a></li>
+                <li><a href="/cats.html" aria-current="page">Famous Cats</a></li>
+                <li><a href="/events.html">Cat Events</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main" class="main-content cards-container">
+        <article class="cat-card">
+            <h2>Jorts</h2>
+            <img src="images/cat-snow.png"
+                alt="Black and white tuxedo cat with distinctive facial markings walking through deep white snow"
+                class="card-image" width="200" height="200">
+            <p>Dolor nulla repellendus quisquam optio in. In optio distinctio doloremque</p>
+            <p>Ipsum lorem sit <button type="button" class="subscribe-link" data-cat="Jorts">Subscribe</button>
+                voluptate inventore.</p>
+        </article>
+
+        <article class="cat-card">
+            <h2>Jean</h2>
+            <img src="images/cat-orange.png"
+                alt="Orange and white tabby cat with green eyes sitting calmly outdoors against a textured wall in natural lighting"
+                class="card-image" width="200" height="200">
+            <p>Dolor nulla repellendus quisquam optio in. In optio distinctio doloremque</p>
+            <p>Ipsum lorem sit <button type="button" class="subscribe-link" data-cat="Jean">Subscribe</button> voluptate
+                inventore.</p>
+        </article>
+
+        <article class="cat-card">
+            <h2>Maru</h2>
+            <img src="images/kitten-small.png"
+                alt="Small gray tabby kitten with large round eyes and tiny pink nose being held gently in someone's hands"
+                class="card-image" width="200" height="200">
+            <p>Dolor nulla repellendus quisquam optio in. In optio distinctio doloremque</p>
+            <p>Dolor nulla repellendus quisquam optio in. In optio distinctio doloremque</p>
+            <p>Ipsum lorem sit <button type="button" class="subscribe-link" data-cat="Maru">Subscribe</button> voluptate
+                inventore.</p>
+        </article>
+
+        <article class="cat-card">
+            <h2>Nyancat</h2>
+            <img src="images/kitten-carpet.png"
+                alt="Young brown tabby kitten with white chest markings crouching playfully on beige carpet with curious expression"
+                class="card-image" width="200" height="200">
+            <p>Dolor nulla repellendus quisquam optio in. In optio distinctio doloremque</p>
+            <p>Ipsum lorem sit <button type="button" class="subscribe-link" data-cat="Nyancat">Subscribe</button>
+                voluptate inventore.</p>
+        </article>
+
+        <article class="cat-card">
+            <h2>Grumpy Cat</h2>
+            <img src="images/kitten-fluffy.png"
+                alt="Fluffy gray and brown tabby kitten with long fur and sweet innocent expression looking at camera"
+                class="card-image" width="200" height="200">
+            <p>Dolor nulla repellendus quisquam optio in. In optio distinctio doloremque</p>
+            <p>Ipsum lorem sit <button type="button" class="subscribe-link" data-cat="Grumpy Cat">Subscribe</button>
+                voluptate inventore.</p>
+        </article>
+
+        <article class="cat-card">
+            <h2>Lil Bub</h2>
+            <img src="images/kitten-ornament.png"
+                alt="Gray tabby kitten with striped markings playfully batting at a shiny red Christmas ornament"
+                class="card-image" width="200" height="200">
+            <p>Dolor nulla repellendus quisquam optio in. In optio distinctio doloremque</p>
+            <p>Ipsum lorem sit <button type="button" class="subscribe-link" data-cat="Lil Bub">Subscribe</button>
+                voluptate inventore.</p>
+        </article>
+    </main>
+
+    <dialog class="modal" id="subscribe-modal">
+        <div class="modal-content">
+            <h2>Subscribe to the Latest Mews!</h2>
+            <form class="subscribe-form" method="POST" action="/subscribe">
+                <div class="form-group">
+                    <label for="email">Email: <span class="required-indicator">* required</span></label>
+                    <input type="text" id="email" name="email" class="form-input">
+                    <span class="error-message" id="email-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-email">Confirm Email: <span class="required-indicator">* required</span></label>
+                    <input type="text" id="confirm-email" name="confirm-email" class="form-input">
+                    <span class="error-message" id="confirm-error"></span>
+                </div>
+                <div class="form-buttons">
+                    <button type="submit" class="btn btn-submit">Subscribe</button>
+                    <button type="button" class="btn btn-cancel">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </dialog>
+
+    <footer class="site-footer">
+        <nav class="footer-nav">
+            <ul class="footer-nav-list">
+                <li><a href="/privacy.html">Privacy Policy</a></li>
+                <li><a href="/work.html">Work for Us</a></li>
+                <li><a href="/contact.html">Contact Us</a></li>
+                <li><a href="/social.html">Social Media</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
