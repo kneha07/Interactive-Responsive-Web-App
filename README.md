@@ -190,7 +190,7 @@ app.post('/subscribe', express.urlencoded({extended: false}), (req, res) => {
 ## 📸 Screenshots
 
 ### Homepage
-![Homepage featuring cats powering the internet](screenshots/homepage.png)
+![Homepage featuring cats powering the internet](screenshots/Homepage-featuring-cats-powering-the-internet.png)
 
 ### Famous Cats Gallery
 ![Gallery of famous internet cats with subscribe buttons](screenshots/famous-cats.png)
